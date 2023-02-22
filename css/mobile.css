@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+
+@layer base {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 62.5%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    span, img {
+        display: block;
+    }
+
+    #dropdownMenuNavigation > nav {
+        transition: width 500ms 500ms, height 500ms;
+    }
+
+    #dropdownMenuNavigation.active > nav {
+        width: 30rem;
+        height: 40rem;
+        transition: width 400ms, height 400ms 400ms;
+    }
+
+    #dropdownMenuNavigation.active > nav > div:first-child {
+        width: calc(100% - 6rem);
+    }
+
+    #dropdownMenuNavigation.active > nav > div + div span:nth-child(1) {
+        transform: translateY(0) rotate(45deg);
+    }
+
+    #dropdownMenuNavigation.active > nav > div + div span:nth-child(2) {
+        scale: 0 1;
+    }
+
+    #dropdownMenuNavigation.active > nav > div + div span:nth-child(3) {
+        transform: translateY(0) rotate(-45deg);
+    }
+
+    #dropdownMenuList {
+        height: calc(100% - 6rem);
+    }
+}
