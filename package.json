@@ -1,0 +1,33 @@
+{
+  "name": "componentstailwind",
+  "version": "1.0.0",
+  "description": "project for practice and learn new themes about frontend\"",
+  "main": "model.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./css/mobile.css -o ./css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HernanAlvarado12/componentsTailwindcss.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "tailwindcss",
+    "vanillajs",
+    "npm"
+  ],
+  "type": "module",
+  "author": "Hernan Alvarado <hernanvid123@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HernanAlvarado12/componentsTailwindcss/issues"
+  },
+  "homepage": "https://github.com/HernanAlvarado12/componentsTailwindcss#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "ionicons": "^6.1.3"
+  }
+}
