@@ -464,6 +464,39 @@ span, img {
   height: calc(100% - 6rem);
 }
 
+#navigationMenuIndication li.indicator ion-icon {
+  translate: 0 -3rem;
+}
+
+#navigationMenuIndication li.indicator span {
+  opacity: 1;
+  translate: 0 -1rem;
+}
+
+#navigationMenuIndication li:nth-child(2).indicator ~ div {
+  translate: 5.2rem;
+}
+
+#navigationMenuIndication li:nth-child(3).indicator ~ div {
+  translate: 10.4rem;
+}
+
+#navigationMenuIndication li:nth-child(4).indicator ~ div {
+  translate: 15.6rem;
+}
+
+#navigationMenuIndication li:nth-child(5).indicator ~ div {
+  translate: 20.8rem;
+}
+
+.round-left {
+  box-shadow: 0.2rem -0.4rem #555;
+}
+
+.round-right {
+  box-shadow: -0.1rem -0.1rem #555, -0.1rem 0.1rem white;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -566,12 +599,40 @@ span, img {
   position: relative;
 }
 
+.left-2 {
+  left: 2rem;
+}
+
+.left-\[-2\.1rem\] {
+  left: -2.1rem;
+}
+
 .right-2 {
   right: 2rem;
 }
 
+.right-\[-2rem\] {
+  right: -2rem;
+}
+
 .top-2 {
   top: 2rem;
+}
+
+.top-\[-2\.5rem\] {
+  top: -2.5rem;
+}
+
+.top-\[50\%\] {
+  top: 50%;
+}
+
+.top-\[51\%\] {
+  top: 51%;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mt-6 {
@@ -602,6 +663,10 @@ span, img {
   height: 2rem;
 }
 
+.h-20 {
+  height: 20rem;
+}
+
 .h-3 {
   height: 3rem;
 }
@@ -610,8 +675,16 @@ span, img {
   height: 45rem;
 }
 
+.h-5 {
+  height: 5rem;
+}
+
 .h-6 {
   height: 6rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-2 {
@@ -622,12 +695,24 @@ span, img {
   width: 3rem;
 }
 
+.w-30 {
+  width: 30rem;
+}
+
 .w-35 {
   width: 35rem;
 }
 
+.w-5 {
+  width: 5rem;
+}
+
 .w-6 {
   width: 6rem;
+}
+
+.w-\[1\.5rem\] {
+  width: 1.5rem;
 }
 
 .w-\[12rem\] {
@@ -656,6 +741,11 @@ span, img {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.translate-y-2 {
+  --tw-translate-y: 2rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .translate-y-\[-0\.4rem\] {
   --tw-translate-y: -0.4rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -672,6 +762,10 @@ span, img {
 
 .grid-flow-dense {
   grid-auto-flow: dense;
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -715,13 +809,26 @@ span, img {
   border-radius: 9999px;
 }
 
+.rounded-md {
+  border-radius: 0.8rem;
+}
+
 .rounded-t-full {
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
 }
 
+.border-\[0\.5rem\] {
+  border-width: 0.5rem;
+}
+
 .border-\[1rem\] {
   border-width: 1rem;
+}
+
+.border-grayish {
+  --tw-border-opacity: 1;
+  border-color: rgb(85 85 85 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -732,6 +839,16 @@ span, img {
 .bg-gray-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-grayish {
+  --tw-bg-opacity: 1;
+  background-color: rgb(85 85 85 / var(--tw-bg-opacity));
+}
+
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
 }
 
 .bg-slate-100 {
@@ -766,8 +883,17 @@ span, img {
   padding: 3rem;
 }
 
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .text-\[2rem\] {
   font-size: 2rem;
+}
+
+.text-base {
+  font-size: 2.4rem;
 }
 
 .text-sm {
@@ -783,6 +909,10 @@ span, img {
   color: rgb(85 85 85 / var(--tw-text-opacity));
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .shadow-sm {
   --tw-shadow: 0 2.5rem 3.5rem rgba(0, 0, 0, 0.1);
   --tw-shadow-colored: 0 2.5rem 3.5rem var(--tw-shadow-color);
@@ -795,6 +925,12 @@ span, img {
   transition-duration: 150ms;
 }
 
+.transition-m-nav {
+  transition-property: opacity, translate;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-scale {
   transition-property: scale;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -803,6 +939,12 @@ span, img {
 
 .transition-transform {
   transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-translate {
+  transition-property: translate;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }

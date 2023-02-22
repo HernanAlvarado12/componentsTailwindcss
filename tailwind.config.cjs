@@ -38,6 +38,7 @@ module.exports = {
         'xs': '1.4rem',
         'sm': '1.6rem',
         'md': '1.8rem',
+        'icon': '2rem',
         'base': '2.4rem',
         'lg': '3.2rem',
         'xl': '4.2rem'
@@ -56,7 +57,9 @@ module.exports = {
       transitionProperty: {
         'transform': 'transform',
         'scale': 'scale',
-        'rotate': 'rotate'
+        'rotate': 'rotate',
+        'translate': 'translate',
+        'm-nav': 'opacity, translate'
       },
       transitionDuration: {
         '400': '400ms'

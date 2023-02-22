@@ -64,8 +64,35 @@
                     </ul>
                 </nav>
             </section>
-            <section>
-                
+            <section class ="w-full h-20 grid place-content-center bg-grayish">
+                <nav class ="w-30 h-6 flex items-center rounded-md bg-white">
+                    <ul class ="w-full h-full px-2 grid grid-cols-5 relative" id ="navigationMenuIndication">
+                        <li class ="indicator flex items-center justify-center relative z-10">
+                            <span class ="absolute opacity-0 translate-y-2 transition-m-nav duration-500">Home</span>
+                            <ion-icon class ="text-base cursor-pointer transition-all duration-400" name ="home-outline"></ion-icon>
+                        </li>
+                        <li class ="flex items-center justify-center relative z-10">
+                            <span class ="absolute opacity-0 translate-y-2 transition-m-nav duration-500">Profile</span>
+                            <ion-icon class ="text-base cursor-pointer transition-all duration-400" name ="person-outline"></ion-icon>
+                        </li>
+                        <li class ="flex items-center justify-center relative z-10">
+                            <span class ="absolute opacity-0 translate-y-2 transition-m-nav duration-500">Message</span>
+                            <ion-icon class ="text-base cursor-pointer transition-all duration-400" name ="chatbubble-outline"></ion-icon>
+                        </li>
+                        <li class =" flex items-center justify-center relative z-10">
+                            <span class ="absolute opacity-0 translate-y-2 transition-m-nav duration-500">Photos</span>
+                            <ion-icon class ="text-base cursor-pointer transition-all duration-400" name ="camera-outline"></ion-icon>
+                        </li>
+                        <li class ="flex items-center justify-center relative z-10">
+                            <span class ="absolute opacity-0 translate-y-2 transition-m-nav duration-500">Setting</span>
+                            <ion-icon class ="text-base cursor-pointer transition-all duration-400" name ="settings-outline"></ion-icon>
+                        </li>
+                        <div class ="w-5 h-5 rounded-full absolute top-[-2.5rem] left-2 transition-translate duration-400 border-[0.5rem] border-grayish bg-green-500">
+                            <span class ="w-[1.5rem] h-1 absolute top-[51%] left-[-2.1rem] rounded-full round-left bg-white"></span>
+                            <span class ="w-[1.5rem] h-1 absolute top-[50%] right-[-2rem] rounded-full round-right bg-white"></span>
+                        </div>
+                    </ul>
+                </nav>
             </section>
         </main>
 
