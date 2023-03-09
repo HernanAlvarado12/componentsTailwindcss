@@ -48,4 +48,37 @@
     #dropdownMenuList {
         height: calc(100% - 6rem);
     }
+
+    #navigationMenuIndication li.indicator ion-icon {
+        translate: 0 -3rem;
+    }
+
+    #navigationMenuIndication li.indicator span {
+        opacity: 1;
+        translate: 0 -1rem;
+    }
+
+    #navigationMenuIndication li:nth-child(2).indicator ~ div {
+        translate: 5.2rem;
+    }
+
+    #navigationMenuIndication li:nth-child(3).indicator ~ div {
+        translate: 10.4rem;
+    }
+
+    #navigationMenuIndication li:nth-child(4).indicator ~ div {
+        translate: 15.6rem;
+    }
+
+    #navigationMenuIndication li:nth-child(5).indicator ~ div {
+        translate: 20.8rem;
+    }
+
+    .round-left {
+        box-shadow: 0.2rem -0.4rem #555;
+    }
+
+    .round-right {
+        box-shadow: -0.1rem -0.1rem #555, -0.1rem 0.1rem white;
+    }
 }
