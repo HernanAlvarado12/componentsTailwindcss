@@ -723,6 +723,10 @@ span, img {
   width: 100%;
 }
 
+.w-40 {
+  width: 40rem;
+}
+
 .min-w-\[6rem\] {
   min-width: 6rem;
 }
@@ -766,6 +770,10 @@ span, img {
 
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -965,5 +973,15 @@ span, img {
   .hover\:text-\[\#4365ff\]:hover {
     --tw-text-opacity: 1;
     color: rgb(67 101 255 / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
